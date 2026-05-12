@@ -8,15 +8,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
   :root {
-    --bg: #0a0a0f;
-    --surface: #12121a;
-    --surface2: #1a1a26;
-    --border: #2a2a3f;
-    --accent: #7c6cff;
-    --accent2: #ff6c9d;
-    --text: #e8e8f0;
-    --muted: #6b6b88;
-    --success: #4fffb0;
+    --bg: #f0f4ff;
+    --surface: #ffffff;
+    --surface2: #e8eeff;
+    --border: #c4cfff;
+    --accent: #4f46e5;
+    --accent2: #e8197d;
+    --text: #1a1a3e;
+    --muted: #6b7280;
+    --success: #059669;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -43,7 +43,7 @@
       linear-gradient(var(--border) 1px, transparent 1px),
       linear-gradient(90deg, var(--border) 1px, transparent 1px);
     background-size: 48px 48px;
-    opacity: 0.3;
+    opacity: 0.5;
     pointer-events: none;
   }
 
@@ -56,7 +56,7 @@
     transform: translateX(-50%);
     width: 600px;
     height: 600px;
-    background: radial-gradient(ellipse, rgba(124,108,255,0.12) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(79,70,229,0.15) 0%, transparent 70%);
     pointer-events: none;
   }
 
@@ -173,7 +173,7 @@
 
   textarea:focus, input[type="text"]:focus {
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(124,108,255,0.12);
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.15);
   }
 
   textarea::placeholder, input::placeholder { color: var(--muted); }
@@ -267,13 +267,13 @@
     letter-spacing: 1px;
     cursor: pointer;
     transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
-    box-shadow: 0 4px 20px rgba(124,108,255,0.3);
+    box-shadow: 0 4px 20px rgba(79,70,229,0.35);
   }
 
   .btn-generate:hover {
     opacity: 0.9;
     transform: translateY(-1px);
-    box-shadow: 0 8px 28px rgba(124,108,255,0.4);
+    box-shadow: 0 8px 28px rgba(79,70,229,0.45);
   }
 
   .btn-generate:active { transform: translateY(0); }
@@ -301,7 +301,7 @@
   }
 
   .qr-frame.has-qr {
-    box-shadow: 0 0 0 1px var(--accent), 0 0 30px rgba(124,108,255,0.2);
+    box-shadow: 0 0 0 1px var(--accent), 0 0 30px rgba(79,70,229,0.25);
     background: #fff;
   }
 
@@ -379,7 +379,7 @@
   .btn-dl.ready:hover {
     border-color: var(--accent);
     color: var(--accent);
-    background: rgba(124,108,255,0.08);
+    background: rgba(79,70,229,0.08);
   }
 
   /* Char counter */
